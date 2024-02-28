@@ -159,11 +159,11 @@
   }
 
   .MenuSection li {
-    font-size: 14px; /* Ajustement de la taille du texte */
+    font-size: 14px; 
   }
 
   .ContentSection {
-    font-size: 16px; /* Ajustement pour la section de contenu */
+    font-size: 16px;
   }
 }
 
@@ -171,7 +171,7 @@
   .MenuSection li {
     margin-top: 15px;
     padding: 8px 0;
-    font-size: 12px; /* Ajustement de la taille du texte pour les éléments de menu */
+    font-size: 12px; 
   }
 
   .MenuSection ul {
@@ -187,11 +187,11 @@
   .content-buttons .button-primary,
   .content-buttons .button-secondary {
     padding: 6px 10px;
-    font-size: 12px; /* Ajustement de la taille du texte pour les boutons */
+    font-size: 12px; 
   }
 
   .ContentSection {
     padding: 10px;
-    font-size: 14px; /* Ajustement pour la section de contenu */
+    font-size: 14px; 
   }
 }
