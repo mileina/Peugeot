@@ -1,15 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faMapMarkerAlt, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(true); 
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
     <header className="header">
       <div className="top-section">
