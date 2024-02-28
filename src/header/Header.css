@@ -34,10 +34,13 @@
 }
 
 .language-selector {
-  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  margin-left: 50px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 1rem;
 }
+
 
 .languages {
   display: none;
