@@ -1,0 +1,175 @@
+.sale-container {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.subtitle {
+  font-size: 25px;
+  margin-bottom: 24px;
+  color: #555;
+}
+
+.offers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.offer-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 30%;
+  margin-bottom: 32px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.car-container {
+  background-color: #ccc;
+  margin: -20px;
+  transition: margin 0.3s ease;
+  position: relative;
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.car-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -1;
+}
+
+.offer-card:hover .car-container {
+  margin: 0;
+  background-color: transparent;
+}
+
+.offer-card:hover .car-gif {
+  opacity: 1;
+}
+
+.offer-details {
+  text-align: left;
+  background-color: #fff;
+  width: calc(100% - 80px);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.offer-title {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.offer-price {
+  font-size: 16px;
+  color: #555;
+}
+
+.custom-offer {
+  padding-top: 30px;
+  background-color: #555;
+  margin-top: 32px;
+    padding-bottom: 10%;
+}
+
+.custom-offer-text {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.offers-button {
+  background-color: #0045b5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.discover-button {
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.discover-button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .offers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer-card {
+    width: 80%;
+  }
+
+  .custom-offer {
+    padding-top: 20px;
+    padding-bottom: 5%;
+  }
+
+  .offers-button,
+  .discover-button {
+    padding: 8px 16px;
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .offer-card {
+    width: 90%;
+  }
+
+  .custom-offer {
+    padding-top: 10px;
+    padding-bottom: 5%;
+  }
+
+  .offers-button,
+  .discover-button {
+    padding: 6px 12px;
+    margin-top: 10px;
+  }
+}

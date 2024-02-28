@@ -1,0 +1,183 @@
+.header {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.top-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+.bottom-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.languages {
+  display: none;
+  position: absolute;
+  margin-left: 50px;
+  top: 100px;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.language-selector:hover .languages {
+  display: block;
+}
+
+.languages span {
+  display: block;
+  cursor: pointer;
+}
+
+.languages span:hover {
+  background-color: #f0f0f0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  font-weight: 600;
+}
+
+.navbar li a:hover {
+  color: red;
+}
+
+.navbar li a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background-color: red;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.icon {
+  font-size: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .icon {
+display: none;
+  }
+
+  .separator {
+display: none;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .top-section {
+    width: auto;
+  }
+
+  .bottom-section {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .language-selector {
+display: none;
+  }
+
+  .logo img {
+    max-width: 80px;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    margin-top: 20px;
+    flex-direction: column;
+    font-size: 12px;
+  }
+
+  .top-section,
+  .bottom-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    max-width: 60px;
+  }
+
+  .language-selector,
+  .header-icons {
+    display: none;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li a {
+    font-size: 14px;
+  }
+}
+
