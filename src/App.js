@@ -3,7 +3,7 @@ import './App.css';
 import Header from './header/Header'; 
 import HomePage from './Homepage/HomePage';
 import Content from './Content/Content';
-import Sale from './Sale/Sale'; // Assurez-vous que le chemin est correct
+import Sale from './Sale/Sale'; 
 
 function App() {
   const [selectedSection, setSelectedSection] = useState('electrique');
@@ -33,7 +33,7 @@ function App() {
           setSelectedSection={setSelectedSection} 
         />
       </div>
-      <Sale /> {/* Ajout du composant Sale ici */}
+      <Sale /> 
     </div>
   );
 }
