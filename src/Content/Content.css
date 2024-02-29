@@ -11,7 +11,7 @@
   background: #464a4b;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start; 
 }
 
 .MenuSection ul {
