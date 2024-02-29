@@ -168,10 +168,8 @@
 }
 
 @media screen and (max-width: 480px) {
-  .MenuSection li {
-    margin-top: 15px;
-    padding: 8px 0;
-    font-size: 12px; 
+  .MenuSection {
+display: none;
   }
 
   .MenuSection ul {
@@ -191,6 +189,7 @@
   }
 
   .ContentSection {
+    width: 95%;
     padding: 10px;
     font-size: 14px; 
   }
