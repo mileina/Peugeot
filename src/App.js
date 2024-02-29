@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './header/Header'; 
 import HomePage from './Homepage/HomePage';
@@ -7,12 +7,11 @@ import Sale from './Sale/Sale';
 
 function App() {
   const [selectedSection, setSelectedSection] = useState('electrique');
-  const contentRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (contentRef.current) {
-        contentRef.current.scrollIntoView({ behavior: 'smooth' });
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        setSelectedSection('footer');
       }
     };
 
@@ -27,12 +26,10 @@ function App() {
     <div className="App">
       <Header /> 
       <HomePage /> 
-      <div ref={contentRef}>
-        <Content 
-          selectedSection={selectedSection} 
-          setSelectedSection={setSelectedSection} 
-        />
-      </div>
+      <Content 
+        selectedSection={selectedSection} 
+        setSelectedSection={setSelectedSection} 
+      />
       <Sale /> 
     </div>
   );
